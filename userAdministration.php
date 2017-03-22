@@ -16,5 +16,14 @@ $userObjekte = $db->getUserList();
             <th>Email</th>
             <th colspan="2">Funktion</th>
         </tr>
+        <?php foreach($userObjekte as $userObjekt): ?>
+        <tr>
+            <td><?php echo $userObjekt->anrede; ?></td>
+            <td><?php echo $userObjekt->vname; ?></td>
+            <td><?php echo $userObjekt->nname; ?></td>
+            <td><?php echo $userObjekt->adresse; ?></td>
+            usw.
+        </tr>
+        <?php endforeach; ?>
     </table>
 </form>
